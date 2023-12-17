@@ -17,7 +17,7 @@ const Background = ({ bgColor, children }) => {
     };
 
     return (
-        <Container fluid className="d-flex flex-column border" style={backgroundStyles}>
+        <Container fluid className="d-flex flex-column" style={backgroundStyles}>
             {children}
         </Container>
     );
