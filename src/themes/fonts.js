@@ -1,3 +1,4 @@
 export const fonts = {
-    raleway: "Raleway Variable, sans-serif",
+    lexend: "Lexend Deca, sans-serif",
+    devanagari: "IBM Plex Sans Devanagari, sans-serif"
 };
