@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Background bgColor = "#DE354C">
+    <Background bgColor = "#E0E1DA">
       <Navbar/>
     </Background>
   );
