@@ -1,4 +1,4 @@
 export const fonts = {
-    lexend: "Lexend Deca, sans-serif",
-    devanagari: "IBM Plex Sans Devanagari, sans-serif"
+    lexend: "Lexend Deca Variable, sans-serif",
+    devanagari: "Anek Devanagari Variable', sans-serif"
 };

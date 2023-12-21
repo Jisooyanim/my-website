@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/anek-devanagari": "^5.0.8",
+    "@fontsource-variable/lexend-deca": "^5.0.8",
     "@fontsource/ibm-plex-sans-devanagari": "^5.0.18",
     "@fontsource/lexend-deca": "^5.0.8",
     "@fontsource/raleway": "^5.0.16",
