@@ -25,20 +25,8 @@ const Sidebar = () => {
       name: "About",
     },
     {
-      link: "#skills",
-      name: "Skills",
-    },
-    {
       link: "#projects",
       name: "Projects",
-    },
-    {
-      link: "#timeline",
-      name: "Timeline",
-    },
-    {
-      link: "#contact",
-      name: "Contact",
     },
   ];
 
