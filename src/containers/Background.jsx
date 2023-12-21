@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-const Background = ({ bgColor, children }) => {
+const Background = ({ children }) => {
     const backgroundStyles = {
-        backgroundColor: `${bgColor}`,
+        backgroundColor: "#E0E1DA",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         position: "absolute",
