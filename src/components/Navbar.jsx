@@ -78,7 +78,7 @@ const Sidebar = () => {
         height: "72px"
       }}
     >
-      <Container>
+      <Container style={{ maxWidth: "1500px" }}>
         <Navbar.Brand
           href="#home"
           style={{
