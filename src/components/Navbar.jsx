@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { fonts } from "../themes/fonts";
 import Typography from "./Typography";
@@ -19,6 +19,8 @@ const brandStyles = {
 };
 
 const Sidebar = () => {
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+
   const pages = [
     {
       link: "#about",
@@ -34,6 +36,18 @@ const Sidebar = () => {
     e.target.style.backgroundColor = isHovered ? 'black' : 'transparent';
     e.target.style.color = isHovered ? 'white' : 'black';
   };
+
+  const handleScroll = () => {
+    const scrolled = window.scrollY > 0;
+    setIsNavbarFixed(scrolled);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const renderPages = pages.map(({ link, name }, index) => (
     <Nav.Link
@@ -60,11 +74,10 @@ const Sidebar = () => {
   return (
     <Navbar
       expand="lg"
-      className="bg-transparent"
-      fixed="top"
+      fixed={isNavbarFixed ? "top" : undefined}
       style={{
         borderBottom: "2px solid black", 
-        height: "72px"
+        height: "72px",
       }}
     >
       <Container style={{ maxWidth: "1480px" }}>
