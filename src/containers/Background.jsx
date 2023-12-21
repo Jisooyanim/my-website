@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-const Background = ({ children }) => {
+const Background = ({ children, isScrollable }) => {
     const backgroundStyles = {
         backgroundColor: "#E0E1DA",
         backgroundSize: "cover",
@@ -11,7 +11,7 @@ const Background = ({ children }) => {
         height: "100%",
         width: "100%",
         margin: 0,
-        overflow: "hidden",
+        overflow: isScrollable ? "auto" : "hidden",
         top: 0,
         left: 0,
     };
