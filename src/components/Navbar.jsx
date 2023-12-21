@@ -12,6 +12,7 @@ const linkStyles = {
 const brandStyles = {
   fontFamily: fonts.lexend,
   fontSize: 22,
+  fontWeight: 600,
   backgroundColor: 'transparent',
   color: 'black',
   transition: 'background-color 0.7s ease, color 0.7s ease',
@@ -59,8 +60,8 @@ const Sidebar = () => {
     >
       <Typography
         family="lexend"
-        size={15}
-        weight={5}
+        size={16}
+        weight={400}
         className="mt-3"
       >
         {name}
