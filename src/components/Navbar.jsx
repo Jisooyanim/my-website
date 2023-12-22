@@ -23,11 +23,11 @@ const Sidebar = () => {
 
   const pages = [
     {
-      link: "#about",
+      link: "/about",
       name: "About",
     },
     {
-      link: "#projects",
+      link: "/projects",
       name: "Projects",
     },
   ];
@@ -82,7 +82,7 @@ const Sidebar = () => {
     >
       <Container style={{ maxWidth: "1480px" }}>
         <Navbar.Brand
-          href="#home"
+          href="/"
           style={{
             ...brandStyles,
           }}

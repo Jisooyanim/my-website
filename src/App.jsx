@@ -1,13 +1,31 @@
 import { React, useState } from "react";
-import Background from "./containers/Background";
-import Navbar from "./components/Navbar"
+import Layout from "./containers/Layout";
+import Home from "./views/Home";
+import About from "./views/About";
+import Projects from "./views/Projects";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Background bgColor = "#E0E1DA">
-      <Navbar/>
-    </Background>
+    <Layout>
+      <BrowserRouter>
+        <Routes>
+          <Route 
+              path="/" 
+              element={<Home />}  
+          />
+          <Route 
+            path="/about" 
+            element={<About />}  
+          />
+          <Route 
+            path="/projects" 
+            element={<Projects />}  
+          />
+        </Routes>
+      </BrowserRouter>
+    </Layout>
   );
 }
 
