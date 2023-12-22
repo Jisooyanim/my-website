@@ -19,7 +19,7 @@ const ProjectLink = ({ to, children }) => (
       color: "black",
       display: "inline-block",
       padding: "10px",
-      transition: "background 0.7s ease, color 0.7s ease",
+      transition: "background 0.5s ease, color 0.5s ease",
       fontSize: 65,
       fontFamily: fonts.lexend,
       backgroundColor: "#E0E1DA",
