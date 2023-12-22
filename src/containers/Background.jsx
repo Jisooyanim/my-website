@@ -11,9 +11,10 @@ const Background = ({ children, isScrollable }) => {
         height: "100%",
         width: "100%",
         margin: 0,
-        overflow: isScrollable ? "auto" : "hidden",
+        padding: 0,
         top: 0,
         left: 0,
+        overflow: isScrollable ? "auto" : "hidden",
     };
 
     return (
