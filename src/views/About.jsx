@@ -35,7 +35,11 @@ const About = () => {
         {
             name: "Read.cv",
             link: "https://read.cv/cvlardizabal",
-        }
+        },
+        {
+            name: "Github",
+            link: "https://github.com/Jisooyanim",
+        },
     ];
 
     const renderLines = lines.map((line, index) =>(
@@ -86,7 +90,7 @@ const About = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="text-start" style={{ marginTop: "50px" }}>
+                    <Col className="text-start" style={{ marginTop: "75px" }}>
                         {renderSocials}
                     </Col>
                     <Col className="text-end">
