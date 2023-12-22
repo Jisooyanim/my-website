@@ -7,6 +7,7 @@ Creating a Portfolio Website thru ReactJS
 ```
     - Responsiveness of the navbar hamburger icon
     - BASICALLY RESPONSIVENESS!!!!!
+    - Animations
 ```
 ---
 ### Reminder
