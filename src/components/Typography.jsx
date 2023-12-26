@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { fonts } from "../themes/fonts";
 
 const Typography = ({
@@ -14,6 +14,12 @@ const Typography = ({
     children,
     ...rest
 }) => {
+    const [fadeIn, setFadeIn] = useState(false);
+
+    useEffect(() => {
+        setFadeIn(true);
+    }, []);
+
     const style = {
         fontFamily: fonts[family],
         fontWeight: weight || null,
@@ -24,6 +30,8 @@ const Typography = ({
         top,
         left,
         right,
+        opacity: fadeIn ? 1 : 0, 
+        transition: "opacity 1s ease-in-out", 
     };
 
     return (

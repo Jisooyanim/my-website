@@ -1,25 +1,27 @@
-import React, { useState, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { fonts } from "../themes/fonts";
 import Typography from "./Typography";
 
-const linkStyles = {
-  backgroundColor: 'transparent',
-  color: 'black',
-  transition: 'background-color 0.7s ease, color 0.7s ease',
-};
-
-const brandStyles = {
-  fontFamily: fonts.lexend,
-  fontSize: 22,
-  fontWeight: 600,
-  backgroundColor: 'transparent',
-  color: 'black',
-  transition: 'background-color 0.7s ease, color 0.7s ease',
-};
-
 const Sidebar = () => {
   const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+  const [fadeIn, setFadeIn] = useState(false);
+
+  const linkStyles = {
+    backgroundColor: "transparent",
+    color: "black",
+    transition: "background-color 0.7s ease, color 0.7s ease",
+  };
+
+  const brandStyles = {
+    fontFamily: fonts.lexend,
+    fontSize: 22,
+    fontWeight: 600,
+    backgroundColor: "transparent",
+    color: "black",
+    opacity: fadeIn ? 1 : 0, 
+    transition: "background-color 0.7s ease, color 0.7s ease, opacity 1s ease-in-out",
+  };
 
   const pages = [
     {
@@ -33,8 +35,8 @@ const Sidebar = () => {
   ];
 
   const handleMouseEnterLeave = (e, isHovered) => {
-    e.target.style.backgroundColor = isHovered ? 'black' : 'transparent';
-    e.target.style.color = isHovered ? 'white' : 'black';
+    e.target.style.backgroundColor = isHovered ? "black" : "transparent";
+    e.target.style.color = isHovered ? "white" : "black";
   };
 
   const handleScroll = () => {
@@ -43,6 +45,7 @@ const Sidebar = () => {
   };
 
   useEffect(() => {
+    setFadeIn(true);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

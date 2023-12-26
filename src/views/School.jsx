@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import Background from "../containers/Background";
 import Navbar from "../components/Navbar";
 import { Container, Row, Col, Image } from "react-bootstrap";
@@ -7,13 +7,21 @@ import ceboom from "../assets/ceboom.png";
 import erp from "../assets/erp.png";
 import balance from "../assets/balancescale.svg"
 
-const pStyle = {
-    fontFamily: fonts.lexend, 
-    fontSize: 17, 
-    fontWeight: 300,
-};
-
 const School = () => {
+    const [fadeIn, setFadeIn] = useState(false);
+
+    const pStyle = {
+        fontFamily: fonts.lexend, 
+        fontSize: 17, 
+        fontWeight: 300,
+        opacity: fadeIn ? 1 : 0, 
+        transition: "opacity 1s ease-in-out", 
+    };
+
+    useEffect(() => {
+        setFadeIn(true);
+    }, []);
+
     return (
         <Background isScrollable={true}>
             <Navbar />
@@ -26,7 +34,16 @@ const School = () => {
             }}>
                 <Row style={{ marginBottom: 150 }}>
                     <Col className="d-flex align-items-center justify-content-center">
-                        <Image src={ceboom} alt="Ceboom" fluid style={{ width: 400, height: 90 }}/>
+                        <Image 
+                            src={ceboom} 
+                            alt="Ceboom" 
+                            fluid 
+                            style={{ 
+                                width: 400, 
+                                height: 90,
+                                opacity: fadeIn ? 1 : 0, 
+                                transition: "opacity 1s ease-in-out", 
+                            }}/>
                     </Col>
                     <Col className="text-start" style={{ paddingTop: 15 }}>
                         <p style={{ ...pStyle }}>                           
@@ -54,7 +71,16 @@ const School = () => {
 
                 <Row style={{ marginBottom: 150 }}>
                     <Col className="d-flex align-items-center justify-content-center">
-                        <Image src={erp} alt="ERP" fluid style={{ width: 550, height: 300 }}/>
+                        <Image 
+                            src={erp} 
+                            alt="ERP" 
+                            fluid 
+                            style={{ 
+                                width: 550, 
+                                height: 300,
+                                opacity: fadeIn ? 1 : 0, 
+                                transition: "opacity 1s ease-in-out", 
+                            }}/>
                     </Col>
                     <Col className="text-start" style={{ paddingTop: 35 }}>
                         <p style={{ ...pStyle }}>  
@@ -71,7 +97,16 @@ const School = () => {
 
                 <Row style={{ marginBottom: 150 }}>
                     <Col className="d-flex align-items-center justify-content-center">
-                        <Image src={balance} alt="balanceScale" fluid style={{ width: 600, height: 400 }}/>
+                        <Image 
+                            src={balance} 
+                            alt="balanceScale" 
+                            fluid 
+                            style={{ 
+                                width: 600, 
+                                height: 400,
+                                opacity: fadeIn ? 1 : 0, 
+                                transition: "opacity 1s ease-in-out", 
+                            }}/>
                     </Col>
                     <Col className="text-start" style={{ paddingTop: 130 }}>
                         <p style={{ ...pStyle }}>  

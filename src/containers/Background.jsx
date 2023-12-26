@@ -14,7 +14,8 @@ const Background = ({ children, isScrollable }) => {
         padding: 0,
         top: 0,
         left: 0,
-        overflow: isScrollable ? "auto" : "hidden",
+        overflowX: "hidden",  // Disable horizontal scrolling
+        overflowY: isScrollable ? "auto" : "hidden",  // Enable vertical scrolling conditionally
     };
 
     return (
