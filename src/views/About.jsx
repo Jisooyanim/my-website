@@ -18,29 +18,28 @@ const About = () => {
 
     const socials = [
         {
-        name: "Email",
-        link: "mailto:cvlardizabal@gmail.com",
+            name: "Email",
+            link: "mailto:cvlardizabal@gmail.com",
         },
         {
-        name: "Resume",
-        link:
-            "https://drive.google.com/file/d/18gu7OOIEzPqH1AAjg8pxYhtUwVTiZDzl/view?usp=sharing",
+            name: "Resume",
+            link: "https://drive.google.com/file/d/18gu7OOIEzPqH1AAjg8pxYhtUwVTiZDzl/view?usp=sharing",
         },
         {
-        name: "LinkedIn",
-        link: "https://www.linkedin.com/in/charles-lardizabal/",
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/in/charles-lardizabal/",
         },
         {
-        name: "Instagram",
-        link: "https://www.instagram.com/vladzzzzzs/",
+            name: "Instagram",
+            link: "https://www.instagram.com/vladzzzzzs/",
         },
         {
-        name: "Read.cv",
-        link: "https://read.cv/cvlardizabal",
+            name: "Read.cv",
+            link: "https://read.cv/cvlardizabal",
         },
         {
-        name: "Github",
-        link: "https://github.com/Jisooyanim",
+            name: "Github",
+            link: "https://github.com/Jisooyanim",
         },
     ];
 
