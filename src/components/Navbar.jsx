@@ -10,7 +10,7 @@ const Sidebar = () => {
   const linkStyles = {
     backgroundColor: "transparent",
     color: "black",
-    transition: "background-color 0.7s ease, color 0.7s ease",
+    transition: "background-color 0.5s ease, color 0.5s ease",
   };
 
   const brandStyles = {
@@ -20,7 +20,7 @@ const Sidebar = () => {
     backgroundColor: "transparent",
     color: "black",
     opacity: fadeIn ? 1 : 0, 
-    transition: "background-color 0.7s ease, color 0.7s ease, opacity 1s ease-in-out",
+    transition: "background-color 0.5s ease, color 0.5s ease, opacity 1s ease-in-out",
   };
 
   const pages = [
@@ -83,7 +83,7 @@ const Sidebar = () => {
         height: "72px",
       }}
     >
-      <Container style={{ maxWidth: "1480px" }}>
+      <Container fluid style={{ maxWidth: "1480px" }}>
         <Navbar.Brand
           href="/"
           style={{

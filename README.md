@@ -1,13 +1,12 @@
 # Personal Website
 
-Creating a Portfolio Website thru ReactJS
-- Ain't gonna be responsive i guess(but gonna try ajajaja)
+A Portfolio Website thru ReactJS
+
 ---
 ### To Work/Improve On
 ```
     - Responsiveness of the navbar hamburger icon
-    - BASICALLY RESPONSIVENESS!!!!!
-    - Animations
+    - Personal Projects
 ```
 ---
 ### Reminder
